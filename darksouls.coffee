@@ -24,7 +24,7 @@ module.exports = (robot) ->
 
         urls = [ ]
         for child in result.data.children
-          if child.data.domain != "self.darksouls"
+          if child.data.domain != "self.darksouls2" and child.data.domain != "self.darksouls"
             urls.push(child.data.url)
 
         if urls.count <= 0
