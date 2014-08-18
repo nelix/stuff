@@ -16,7 +16,7 @@
 url = require("url")
 
 module.exports = (robot) ->
-  robot.respond /darksouls/i, (msg) ->
+  robot.respond /praise the sun/i, (msg) ->
     search = escape(msg.match[1])
     msg.http('http://www.reddit.com/r/darksouls+darksouls2.json')
       .get() (err, res, body) ->
